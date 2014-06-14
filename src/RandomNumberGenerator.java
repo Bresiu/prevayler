@@ -20,9 +20,9 @@ public class RandomNumberGenerator {
             int randomNumbersSize = numbers.numbersSize();
 
             System.out.println("Random numbers generated: " + randomNumbersSize
-                    + ". Last number generated: " + random);
+                    + ". Last number generated: " + random + " Previous number: " + numbers.returnLastNumber());
             if (randomNumbersSize > 100) {
-                System.out.println(numbers.getNumbers().get(numbers.numbersSize() - 100));
+                System.out.println("current - 100 number: " + numbers.getNumbers().get(numbers.numbersSize() - 100));
             }
             try {
                 Thread.sleep(1000);
