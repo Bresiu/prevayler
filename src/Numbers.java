@@ -7,11 +7,19 @@ public class Numbers implements Serializable {
 
     private final ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-    public void addNumber(Integer number) {
+    public void addNumber(int number) {
         numbers.add(number);
     }
 
     public List getNumbers() {
         return numbers;
+    }
+
+    public int numbersSize() {
+        return numbers.size();
+    }
+
+    public int returnLastNumber() {
+        return numbers.isEmpty() ? 0 : numbers.get(numbers.size() - 1);
     }
 }
