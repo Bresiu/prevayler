@@ -4,12 +4,12 @@ import java.util.Random;
 
 public class RandomNumberGenerator {
 
-    private final Prevayler prevayler;
-    private final Numbers numbers;
+    private static Prevayler prevayler;
+    private static Numbers numbers;
 
     public RandomNumberGenerator(Prevayler prevayler) {
-        this.prevayler = prevayler;
-        this.numbers = (Numbers) prevayler.prevalentSystem();
+        RandomNumberGenerator.prevayler = prevayler;
+        numbers = (Numbers) prevayler.prevalentSystem();
     }
 
     void start() {
@@ -36,8 +36,4 @@ public class RandomNumberGenerator {
         Random randomGenerator = new Random();
         return randomGenerator.nextInt(100);
     }
-
-    //public static void foo() {
-    //    System.out.println("bar");
-    //}
 }
