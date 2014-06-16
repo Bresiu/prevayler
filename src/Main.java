@@ -7,6 +7,7 @@ import java.io.InputStreamReader;
 public class Main {
 
     public static void main(String[] args) throws Exception {
+        Migration.go();
         printMessage();
         Prevayler prevayler = PrevaylerFactory.createPrevayler(new Numbers(), "Prevayler Demo");
         new RandomNumberGenerator(prevayler).start();

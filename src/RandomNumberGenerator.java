@@ -36,4 +36,8 @@ public class RandomNumberGenerator {
         Random randomGenerator = new Random();
         return randomGenerator.nextInt(100);
     }
+
+    //public static void foo() {
+    //    System.out.println("bar");
+    //}
 }
